@@ -1,10 +1,10 @@
 // Complete the js code
 function Car(make, model) {
-    this._make = make;
-	this._model = model;
+    this.make = make;
+	this.model = model;
 }
 Car.prototype.getMakeModel = function(){
-	  return `${this._make} ${this._model}`;
+	  return `${this.make} ${this.model}`;
 };
 
 function SportsCar(make, model, topSpeed) {
@@ -19,6 +19,7 @@ SportsCar.prototype.constructor = SportsCar;
 	return this.topspeed;
 }
 // Do not change the code below
+
 const car = new SportsCar("Ferrari", "Testarossa", 200);
 console.log(car.getMakeModel()); // Output: Ferrari Testarossa
 console.log(car.getTopSpeed()); // Output: 200
